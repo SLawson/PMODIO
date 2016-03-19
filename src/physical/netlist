@@ -1,0 +1,188 @@
+Netlist
+
+Exported from pmodio.sch at 3/18/16 8:13 PM
+
+EAGLE Version 7.5.0 Copyright (c) 1988-2015 CadSoft
+
+Net         Part     Pad      Pin        Sheet
+
++3.3V       C1       1        1          1
+            C4       2        2          1
+            ENC1     SW1      SW1        1
+            IC1      3        SHDN       1
+            IC1      5        VIN        1
+            IC2      3        VIN        1
+            IC2      4        EN         1
+            IC3      23       VCCB0      1
+            IC3      24       VCCB1      1
+            IC4      23       VCCB0      1
+            IC4      24       VCCB1      1
+            JA       12       12         1
+            JA       6        6          1
+            JB       12       12         1
+            JB       6        6          1
+            JP2      3        3          1
+            R4       2        2          1
+            R5       2        2          1
+
++5V         C6       1        1          1
+            IC1      1        VOUT       1
+            IC3      1        VCCA       1
+            IC4      1        VCCA       1
+            JP2      4        4          1
+            LCD      LED+     LED+       1
+            LCD      VDD      VDD        1
+
+-3.3V       C3       1        1          1
+            IC2      1        VOUT       1
+            JP2      1        1          1
+            R7       1        1          1
+
+CNTLB_3.3V0 IC3      21       B1         1
+            JA       4        4          1
+
+CNTLB_3.3V1 IC3      20       B2         1
+            JA       3        3          1
+
+CNTLB_3.3V2 IC3      19       B3         1
+            JA       2        2          1
+
+CNTLB_3.3V3 IC3      18       B4         1
+            JA       7        7          1
+
+CNTLB_3.3V4 IC3      17       B5         1
+            JA       1        1          1
+
+CNTLB_5V0   IC3      3        A1         1
+            LCD      CS2B     CS2B       1
+
+CNTLB_5V1   IC3      4        A2         1
+            LCD      CS1B     CS1B       1
+
+CNTLB_5V2   IC3      5        A3         1
+            LCD      RST      RST        1
+
+CNTLB_5V3   IC3      6        A4         1
+            LCD      RS       RS         1
+
+CNTLB_5V4   IC3      7        A5         1
+            LCD      E        E          1
+
+DB_3.3V0    IC4      21       B1         1
+            JB       10       10         1
+
+DB_3.3V1    IC4      20       B2         1
+            JB       4        4          1
+
+DB_3.3V2    IC4      19       B3         1
+            JB       9        9          1
+
+DB_3.3V3    IC4      18       B4         1
+            JB       3        3          1
+
+DB_3.3V4    IC4      17       B5         1
+            JB       8        8          1
+
+DB_3.3V5    IC4      16       B6         1
+            JB       2        2          1
+
+DB_3.3V6    IC4      15       B7         1
+            JB       7        7          1
+
+DB_3.3V7    IC4      14       B8         1
+            JB       1        1          1
+
+DB_5V0      IC4      3        A1         1
+            LCD      DB0      DB0        1
+
+DB_5V1      IC4      4        A2         1
+            LCD      DB1      DB1        1
+
+DB_5V2      IC4      5        A3         1
+            LCD      DB2      DB2        1
+
+DB_5V3      IC4      6        A4         1
+            LCD      DB3      DB3        1
+
+DB_5V4      IC4      7        A5         1
+            LCD      DB4      DB4        1
+
+DB_5V5      IC4      8        A6         1
+            LCD      DB5      DB5        1
+
+DB_5V6      IC4      9        A7         1
+            LCD      DB6      DB6        1
+
+DB_5V7      IC4      10       A8         1
+            LCD      DB7      DB7        1
+
+GND         C1       2        2          1
+            C3       2        2          1
+            C4       1        1          1
+            C6       2        2          1
+            ENC1     C        C          1
+            IC1      2        GND        1
+            IC2      2        GND        1
+            IC3      10       A8         1
+            IC3      11       GND0       1
+            IC3      12       GND1       1
+            IC3      13       GND2       1
+            IC3      14       B8         1
+            IC3      15       B7         1
+            IC3      16       B6         1
+            IC3      2        DIR        1
+            IC3      22       OE         1
+            IC3      8        A6         1
+            IC3      9        A7         1
+            IC4      11       GND0       1
+            IC4      12       GND1       1
+            IC4      13       GND2       1
+            IC4      2        DIR        1
+            IC4      22       OE         1
+            JA       11       11         1
+            JA       5        5          1
+            JB       11       11         1
+            JB       5        5          1
+            JP2      2        2          1
+            LCD      LED-     LED-       1
+            LCD      RW       R/W        1
+            LCD      VSS0     VSS0       1
+            LCD      VSS1     VSS1       1
+            R6       2        2          1
+
+N$2         LCD      V0       V0         1
+            R7       2        2          1
+
+N$9         C2       1        1          1
+            IC2      5        C+         1
+
+N$10        C2       2        2          1
+            IC2      6        C-         1
+
+N$11        C5       1        1          1
+            IC1      6        C+         1
+
+N$12        C5       2        2          1
+            IC1      4        C-         1
+
+N$15        ENC1     A        A          1
+            R1       1        1          1
+            R4       1        1          1
+
+N$16        ENC1     B        B          1
+            R2       1        1          1
+            R5       1        1          1
+
+N$17        ENC1     SW2      SW2        1
+            R3       1        1          1
+            R6       1        1          1
+
+N$18        JA       10       10         1
+            R1       2        2          1
+
+N$20        JA       8        8          1
+            R3       2        2          1
+
+N$26        JA       9        9          1
+            R2       2        2          1
+
