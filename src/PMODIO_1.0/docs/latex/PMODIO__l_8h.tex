@@ -1,0 +1,402 @@
+\hypertarget{PMODIO__l_8h}{\section{P\-M\-O\-D\-I\-O\-\_\-l.\-h File Reference}
+\label{PMODIO__l_8h}\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+}
+{\ttfamily \#include \char`\"{}P\-M\-O\-D\-I\-O.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{PMODIO__l_8h_a25b7394ebd8a79de60b1cca88fa39eb7}{R\-O\-T\-\_\-\-C\-N\-T}~0
+\item 
+\#define \hyperlink{PMODIO__l_8h_a4819eadb66f8c3dfba77db8e4630530d}{R\-O\-T\-\_\-\-S\-T\-E\-P}~4
+\item 
+\#define \hyperlink{PMODIO__l_8h_a8c9f9a9b3563a3ee0541dd658a5e29ef}{R\-O\-T\-\_\-\-S\-T\-S}~8
+\item 
+\#define \hyperlink{PMODIO__l_8h_a360cbcaff7c7f151766d3b9a9b8c857a}{R\-O\-T\-\_\-\-M\-A\-X\-\_\-\-C\-N\-T}~12
+\item 
+\#define \hyperlink{PMODIO__l_8h_a0a72bc1bfc6a0898aadd1c30dd584028}{R\-O\-T\-\_\-\-M\-I\-N\-\_\-\-C\-N\-T}~16
+\item 
+\#define \hyperlink{PMODIO__l_8h_a734bb36c9c721ace0e03a029e50b7993}{R\-O\-T\-\_\-\-R\-S\-V\-D0}~20
+\item 
+\#define \hyperlink{PMODIO__l_8h_a25e9d818788f36ed74d7c4579f87f2a6}{L\-C\-D\-\_\-\-D\-A\-T\-A}~24
+\item 
+\#define \hyperlink{PMODIO__l_8h_a2ccf6f0cf460281337373c8be0665b7a}{L\-C\-D\-\_\-\-C\-N\-T\-L}~28
+\item 
+\#define \hyperlink{PMODIO__l_8h_a5eb925a63a7b2b8ef806c9bca729d107}{L\-C\-D\-\_\-\-R\-S\-V\-D0}~32
+\item 
+\#define \hyperlink{PMODIO__l_8h_a86342b07b38a2b66b941c0f293e63a4b}{G\-P\-\_\-\-R\-S\-V\-D0}~36
+\item 
+\#define \hyperlink{PMODIO__l_8h_ae7722726622979f699ac6693bab9f7ac}{G\-P\-\_\-\-R\-S\-V\-D1}~40
+\item 
+\#define \hyperlink{PMODIO__l_8h_a9d42fdca8db53863a9ef679f8e62741a}{G\-P\-\_\-\-R\-S\-V\-D2}~44
+\item 
+\#define \hyperlink{PMODIO__l_8h_a591dbc12e42ec0b2cdcad6cd82bdc204}{P\-M\-O\-D\-I\-O\-\_\-m\-Write\-Reg}(Base\-Address, Reg\-Offset, Data)~Xil\-\_\-\-Out32((Base\-Address) + (Reg\-Offset), (u32)(Data))
+\item 
+\#define \hyperlink{PMODIO__l_8h_aa4e3523ac9e6d6d88b1e95f27e444951}{P\-M\-O\-D\-I\-O\-\_\-m\-Read\-Reg}(Base\-Address, Reg\-Offset)~Xil\-\_\-\-In32((Base\-Address) + (Reg\-Offset))
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \hyperlink{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421}{C\-N\-T\-L\-\_\-\-B\-I\-T} \hyperlink{PMODIO__l_8h_a5d058793d27b6b7ba5222d617900e46b}{L\-C\-D\-\_\-\-C\-N\-T\-L\-\_\-\-B\-I\-T}
+\item 
+typedef enum \hyperlink{PMODIO__l_8h_abe86a11186a6e250f07ce9a215c243cf}{C\-H\-I\-P} \hyperlink{PMODIO__l_8h_af4fa314211262f7ae26835681d252b3d}{L\-C\-D\-\_\-\-C\-H\-I\-P}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421}{C\-N\-T\-L\-\_\-\-B\-I\-T} \{ \\*
+\hyperlink{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421ab75621f5762d869b6b12ef74e10d0bf8}{R\-E\-S\-E\-T\-\_\-\-N}, 
+\hyperlink{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421ab2e967e19492ed2a71d93f4769c3a050}{E\-N\-\_\-\-O\-P}, 
+\hyperlink{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421abcd6046c0333756792e36551a6f6c212}{R\-E\-G\-\_\-\-S\-E\-L}, 
+\hyperlink{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421acee62b06a3d968ab12920646f5e74377}{C\-S1}, 
+\\*
+\hyperlink{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421a9218534915aad9d7c1e0c9e8f67c9091}{C\-S2}
+ \}
+\item 
+enum \hyperlink{PMODIO__l_8h_abe86a11186a6e250f07ce9a215c243cf}{C\-H\-I\-P} \{ \hyperlink{PMODIO__l_8h_abe86a11186a6e250f07ce9a215c243cfa1e8ca73ae7ee8927e675b003a2b38efa}{C\-H\-I\-P1}, 
+\hyperlink{PMODIO__l_8h_abe86a11186a6e250f07ce9a215c243cfa25230e4c0e34dce6b3e0b12edfb69c6a}{C\-H\-I\-P2}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+X\-Status \hyperlink{PMODIO__l_8h_ae29e4bac296761d33c37b2b330fac115}{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-init} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p)
+\item 
+X\-Status \hyperlink{PMODIO__l_8h_a5dc2d78d6fd27b1c033d5ceba7b40cb7}{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-exec\-Cmd} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p, u8 cmd, \hyperlink{PMODIO__l_8h_af4fa314211262f7ae26835681d252b3d}{L\-C\-D\-\_\-\-C\-H\-I\-P} chip)
+\item 
+X\-Status \hyperlink{PMODIO__l_8h_a28e3d218d2e8998b16560464278feb8d}{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write\-Data\-Bits} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p, u8 pattern)
+\item 
+X\-Status \hyperlink{PMODIO__l_8h_a42f6762bd5671e74e15edfb87338d1b2}{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write\-Commit} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p, u8 data)
+\item 
+X\-Status \hyperlink{PMODIO__l_8h_a40534f016bc1a3c05b8e32e729e1b81c}{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-set\-Cntl\-Bit} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p, \hyperlink{PMODIO__l_8h_a5d058793d27b6b7ba5222d617900e46b}{L\-C\-D\-\_\-\-C\-N\-T\-L\-\_\-\-B\-I\-T} bit)
+\item 
+X\-Status \hyperlink{PMODIO__l_8h_a105c3385168bb863fc96a4d774cc271c}{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-clr\-Cntl\-Bit} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p, \hyperlink{PMODIO__l_8h_a5d058793d27b6b7ba5222d617900e46b}{L\-C\-D\-\_\-\-C\-N\-T\-L\-\_\-\-B\-I\-T} bit)
+\item 
+X\-Status \hyperlink{PMODIO__l_8h_a7724f40ab627fb78a2a86da01bd90a78}{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-exec} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p)
+\item 
+void \hyperlink{PMODIO__l_8h_aff5bfd571b343078e91b63880b580ee5}{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-delay} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Scott Lawson 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Scott Lawson, 2016
+\end{DoxyCopyright}
+Header file for low-\/level driver functions in the \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} peripheral driver.
+
+\begin{DoxyWarning}{Warning}
+This file is only intended for \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} driver use, and should not be directly included by applications. Use \hyperlink{PMODIO_8h}{P\-M\-O\-D\-I\-O.\-h} for A\-P\-I access.
+\end{DoxyWarning}
+
+\begin{DoxyPre}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}Modification History:\end{DoxyPre}
+
+
+
+\begin{DoxyPre}Ver      Who     Date            Changes\end{DoxyPre}
+
+
+
+\begin{DoxyPre}1.0      SRL     16 Mar 2016     Initial release\end{DoxyPre}
+
+
+
+\begin{DoxyPre}\end{DoxyPre}
+ 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{PMODIO__l_8h_a86342b07b38a2b66b941c0f293e63a4b}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!G\-P\-\_\-\-R\-S\-V\-D0@{G\-P\-\_\-\-R\-S\-V\-D0}}
+\index{G\-P\-\_\-\-R\-S\-V\-D0@{G\-P\-\_\-\-R\-S\-V\-D0}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{G\-P\-\_\-\-R\-S\-V\-D0}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-P\-\_\-\-R\-S\-V\-D0~36}}\label{PMODIO__l_8h_a86342b07b38a2b66b941c0f293e63a4b}
+Register offset\-: General purpose reserved \hypertarget{PMODIO__l_8h_ae7722726622979f699ac6693bab9f7ac}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!G\-P\-\_\-\-R\-S\-V\-D1@{G\-P\-\_\-\-R\-S\-V\-D1}}
+\index{G\-P\-\_\-\-R\-S\-V\-D1@{G\-P\-\_\-\-R\-S\-V\-D1}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{G\-P\-\_\-\-R\-S\-V\-D1}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-P\-\_\-\-R\-S\-V\-D1~40}}\label{PMODIO__l_8h_ae7722726622979f699ac6693bab9f7ac}
+Register offset\-: General purpose reserved \hypertarget{PMODIO__l_8h_a9d42fdca8db53863a9ef679f8e62741a}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!G\-P\-\_\-\-R\-S\-V\-D2@{G\-P\-\_\-\-R\-S\-V\-D2}}
+\index{G\-P\-\_\-\-R\-S\-V\-D2@{G\-P\-\_\-\-R\-S\-V\-D2}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{G\-P\-\_\-\-R\-S\-V\-D2}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-P\-\_\-\-R\-S\-V\-D2~44}}\label{PMODIO__l_8h_a9d42fdca8db53863a9ef679f8e62741a}
+Register offset\-: General purpose reserved \hypertarget{PMODIO__l_8h_a2ccf6f0cf460281337373c8be0665b7a}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!L\-C\-D\-\_\-\-C\-N\-T\-L@{L\-C\-D\-\_\-\-C\-N\-T\-L}}
+\index{L\-C\-D\-\_\-\-C\-N\-T\-L@{L\-C\-D\-\_\-\-C\-N\-T\-L}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{L\-C\-D\-\_\-\-C\-N\-T\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-C\-D\-\_\-\-C\-N\-T\-L~28}}\label{PMODIO__l_8h_a2ccf6f0cf460281337373c8be0665b7a}
+Register offset\-: L\-C\-D control \hypertarget{PMODIO__l_8h_a25e9d818788f36ed74d7c4579f87f2a6}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!L\-C\-D\-\_\-\-D\-A\-T\-A@{L\-C\-D\-\_\-\-D\-A\-T\-A}}
+\index{L\-C\-D\-\_\-\-D\-A\-T\-A@{L\-C\-D\-\_\-\-D\-A\-T\-A}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{L\-C\-D\-\_\-\-D\-A\-T\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-C\-D\-\_\-\-D\-A\-T\-A~24}}\label{PMODIO__l_8h_a25e9d818788f36ed74d7c4579f87f2a6}
+Register offset\-: L\-C\-D data \hypertarget{PMODIO__l_8h_a5eb925a63a7b2b8ef806c9bca729d107}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!L\-C\-D\-\_\-\-R\-S\-V\-D0@{L\-C\-D\-\_\-\-R\-S\-V\-D0}}
+\index{L\-C\-D\-\_\-\-R\-S\-V\-D0@{L\-C\-D\-\_\-\-R\-S\-V\-D0}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{L\-C\-D\-\_\-\-R\-S\-V\-D0}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-C\-D\-\_\-\-R\-S\-V\-D0~32}}\label{PMODIO__l_8h_a5eb925a63a7b2b8ef806c9bca729d107}
+Register offset\-: L\-C\-D reserved 0 \hypertarget{PMODIO__l_8h_aa4e3523ac9e6d6d88b1e95f27e444951}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!P\-M\-O\-D\-I\-O\-\_\-m\-Read\-Reg@{P\-M\-O\-D\-I\-O\-\_\-m\-Read\-Reg}}
+\index{P\-M\-O\-D\-I\-O\-\_\-m\-Read\-Reg@{P\-M\-O\-D\-I\-O\-\_\-m\-Read\-Reg}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-m\-Read\-Reg}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-M\-O\-D\-I\-O\-\_\-m\-Read\-Reg(
+\begin{DoxyParamCaption}
+\item[{}]{Base\-Address, }
+\item[{}]{Reg\-Offset}
+\end{DoxyParamCaption}
+)~Xil\-\_\-\-In32((Base\-Address) + (Reg\-Offset))}}\label{PMODIO__l_8h_aa4e3523ac9e6d6d88b1e95f27e444951}
+Read a value from a \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} register. A 32 bit read is performed. If the component is implemented in a smaller width, only the least significant data is read from the register. The most significant data will be read as 0.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Base\-Address} & is the base address of the \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} device. \\
+\hline
+{\em Reg\-Offset} & is the register offset from the base to write to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data is the data from the register.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+C-\/style signature\-: u32 \hyperlink{PMODIO__l_8h_aa4e3523ac9e6d6d88b1e95f27e444951}{P\-M\-O\-D\-I\-O\-\_\-m\-Read\-Reg(u32 Base\-Address, unsigned Reg\-Offset)} 
+\end{DoxyNote}
+\hypertarget{PMODIO__l_8h_a591dbc12e42ec0b2cdcad6cd82bdc204}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!P\-M\-O\-D\-I\-O\-\_\-m\-Write\-Reg@{P\-M\-O\-D\-I\-O\-\_\-m\-Write\-Reg}}
+\index{P\-M\-O\-D\-I\-O\-\_\-m\-Write\-Reg@{P\-M\-O\-D\-I\-O\-\_\-m\-Write\-Reg}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-m\-Write\-Reg}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-M\-O\-D\-I\-O\-\_\-m\-Write\-Reg(
+\begin{DoxyParamCaption}
+\item[{}]{Base\-Address, }
+\item[{}]{Reg\-Offset, }
+\item[{}]{Data}
+\end{DoxyParamCaption}
+)~Xil\-\_\-\-Out32((Base\-Address) + (Reg\-Offset), (u32)(Data))}}\label{PMODIO__l_8h_a591dbc12e42ec0b2cdcad6cd82bdc204}
+Write a value to a \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} register. A 32 bit write is performed. If the component is implemented in a smaller width, only the least significant data is written.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Base\-Address} & is the base address of the P\-M\-O\-D\-I\-Odevice. \\
+\hline
+{\em Reg\-Offset} & is the register offset from the base to write to. \\
+\hline
+{\em Data} & is the data written to the register.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+C-\/style signature\-: void \hyperlink{PMODIO__l_8h_a591dbc12e42ec0b2cdcad6cd82bdc204}{P\-M\-O\-D\-I\-O\-\_\-m\-Write\-Reg(u32 Base\-Address, unsigned Reg\-Offset, u32 Data)} 
+\end{DoxyNote}
+\hypertarget{PMODIO__l_8h_a25b7394ebd8a79de60b1cca88fa39eb7}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!R\-O\-T\-\_\-\-C\-N\-T@{R\-O\-T\-\_\-\-C\-N\-T}}
+\index{R\-O\-T\-\_\-\-C\-N\-T@{R\-O\-T\-\_\-\-C\-N\-T}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{R\-O\-T\-\_\-\-C\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-O\-T\-\_\-\-C\-N\-T~0}}\label{PMODIO__l_8h_a25b7394ebd8a79de60b1cca88fa39eb7}
+Register offset\-: Rotary encoder count \hypertarget{PMODIO__l_8h_a360cbcaff7c7f151766d3b9a9b8c857a}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!R\-O\-T\-\_\-\-M\-A\-X\-\_\-\-C\-N\-T@{R\-O\-T\-\_\-\-M\-A\-X\-\_\-\-C\-N\-T}}
+\index{R\-O\-T\-\_\-\-M\-A\-X\-\_\-\-C\-N\-T@{R\-O\-T\-\_\-\-M\-A\-X\-\_\-\-C\-N\-T}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{R\-O\-T\-\_\-\-M\-A\-X\-\_\-\-C\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-O\-T\-\_\-\-M\-A\-X\-\_\-\-C\-N\-T~12}}\label{PMODIO__l_8h_a360cbcaff7c7f151766d3b9a9b8c857a}
+Register offset\-: Rotary encoder maximum allowed count \hypertarget{PMODIO__l_8h_a0a72bc1bfc6a0898aadd1c30dd584028}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!R\-O\-T\-\_\-\-M\-I\-N\-\_\-\-C\-N\-T@{R\-O\-T\-\_\-\-M\-I\-N\-\_\-\-C\-N\-T}}
+\index{R\-O\-T\-\_\-\-M\-I\-N\-\_\-\-C\-N\-T@{R\-O\-T\-\_\-\-M\-I\-N\-\_\-\-C\-N\-T}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{R\-O\-T\-\_\-\-M\-I\-N\-\_\-\-C\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-O\-T\-\_\-\-M\-I\-N\-\_\-\-C\-N\-T~16}}\label{PMODIO__l_8h_a0a72bc1bfc6a0898aadd1c30dd584028}
+Register offset\-: Rotary encoder minimum allowed count \hypertarget{PMODIO__l_8h_a734bb36c9c721ace0e03a029e50b7993}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!R\-O\-T\-\_\-\-R\-S\-V\-D0@{R\-O\-T\-\_\-\-R\-S\-V\-D0}}
+\index{R\-O\-T\-\_\-\-R\-S\-V\-D0@{R\-O\-T\-\_\-\-R\-S\-V\-D0}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{R\-O\-T\-\_\-\-R\-S\-V\-D0}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-O\-T\-\_\-\-R\-S\-V\-D0~20}}\label{PMODIO__l_8h_a734bb36c9c721ace0e03a029e50b7993}
+Register offset\-: Rotary encoder reserved 0 \hypertarget{PMODIO__l_8h_a4819eadb66f8c3dfba77db8e4630530d}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!R\-O\-T\-\_\-\-S\-T\-E\-P@{R\-O\-T\-\_\-\-S\-T\-E\-P}}
+\index{R\-O\-T\-\_\-\-S\-T\-E\-P@{R\-O\-T\-\_\-\-S\-T\-E\-P}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{R\-O\-T\-\_\-\-S\-T\-E\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-O\-T\-\_\-\-S\-T\-E\-P~4}}\label{PMODIO__l_8h_a4819eadb66f8c3dfba77db8e4630530d}
+Register offset\-: Rotary encoder step size \hypertarget{PMODIO__l_8h_a8c9f9a9b3563a3ee0541dd658a5e29ef}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!R\-O\-T\-\_\-\-S\-T\-S@{R\-O\-T\-\_\-\-S\-T\-S}}
+\index{R\-O\-T\-\_\-\-S\-T\-S@{R\-O\-T\-\_\-\-S\-T\-S}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{R\-O\-T\-\_\-\-S\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-O\-T\-\_\-\-S\-T\-S~8}}\label{PMODIO__l_8h_a8c9f9a9b3563a3ee0541dd658a5e29ef}
+Register offset\-: Rotary encoder status 
+
+\subsection{Typedef Documentation}
+\hypertarget{PMODIO__l_8h_af4fa314211262f7ae26835681d252b3d}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!L\-C\-D\-\_\-\-C\-H\-I\-P@{L\-C\-D\-\_\-\-C\-H\-I\-P}}
+\index{L\-C\-D\-\_\-\-C\-H\-I\-P@{L\-C\-D\-\_\-\-C\-H\-I\-P}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{L\-C\-D\-\_\-\-C\-H\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf C\-H\-I\-P}  {\bf L\-C\-D\-\_\-\-C\-H\-I\-P}}}\label{PMODIO__l_8h_af4fa314211262f7ae26835681d252b3d}
+Available L\-C\-D Chips \hypertarget{PMODIO__l_8h_a5d058793d27b6b7ba5222d617900e46b}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!L\-C\-D\-\_\-\-C\-N\-T\-L\-\_\-\-B\-I\-T@{L\-C\-D\-\_\-\-C\-N\-T\-L\-\_\-\-B\-I\-T}}
+\index{L\-C\-D\-\_\-\-C\-N\-T\-L\-\_\-\-B\-I\-T@{L\-C\-D\-\_\-\-C\-N\-T\-L\-\_\-\-B\-I\-T}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{L\-C\-D\-\_\-\-C\-N\-T\-L\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf C\-N\-T\-L\-\_\-\-B\-I\-T}  {\bf L\-C\-D\-\_\-\-C\-N\-T\-L\-\_\-\-B\-I\-T}}}\label{PMODIO__l_8h_a5d058793d27b6b7ba5222d617900e46b}
+L\-C\-D Control Bits 
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{PMODIO__l_8h_abe86a11186a6e250f07ce9a215c243cf}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!C\-H\-I\-P@{C\-H\-I\-P}}
+\index{C\-H\-I\-P@{C\-H\-I\-P}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{C\-H\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-H\-I\-P}}}\label{PMODIO__l_8h_abe86a11186a6e250f07ce9a215c243cf}
+Available L\-C\-D Chips \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\-H\-I\-P1@{C\-H\-I\-P1}!P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!C\-H\-I\-P1@{C\-H\-I\-P1}}\item[{\em 
+\hypertarget{PMODIO__l_8h_abe86a11186a6e250f07ce9a215c243cfa1e8ca73ae7ee8927e675b003a2b38efa}{C\-H\-I\-P1}\label{PMODIO__l_8h_abe86a11186a6e250f07ce9a215c243cfa1e8ca73ae7ee8927e675b003a2b38efa}
+}]Chip 1 (left) \index{C\-H\-I\-P2@{C\-H\-I\-P2}!P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!C\-H\-I\-P2@{C\-H\-I\-P2}}\item[{\em 
+\hypertarget{PMODIO__l_8h_abe86a11186a6e250f07ce9a215c243cfa25230e4c0e34dce6b3e0b12edfb69c6a}{C\-H\-I\-P2}\label{PMODIO__l_8h_abe86a11186a6e250f07ce9a215c243cfa25230e4c0e34dce6b3e0b12edfb69c6a}
+}]Chip 2 (right) \end{description}
+\end{Desc}
+\hypertarget{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!C\-N\-T\-L\-\_\-\-B\-I\-T@{C\-N\-T\-L\-\_\-\-B\-I\-T}}
+\index{C\-N\-T\-L\-\_\-\-B\-I\-T@{C\-N\-T\-L\-\_\-\-B\-I\-T}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{C\-N\-T\-L\-\_\-\-B\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\-N\-T\-L\-\_\-\-B\-I\-T}}}\label{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421}
+L\-C\-D Control Bits \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{R\-E\-S\-E\-T\-\_\-\-N@{R\-E\-S\-E\-T\-\_\-\-N}!P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!R\-E\-S\-E\-T\-\_\-\-N@{R\-E\-S\-E\-T\-\_\-\-N}}\item[{\em 
+\hypertarget{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421ab75621f5762d869b6b12ef74e10d0bf8}{R\-E\-S\-E\-T\-\_\-\-N}\label{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421ab75621f5762d869b6b12ef74e10d0bf8}
+}]Active-\/low reset \index{E\-N\-\_\-\-O\-P@{E\-N\-\_\-\-O\-P}!P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!E\-N\-\_\-\-O\-P@{E\-N\-\_\-\-O\-P}}\item[{\em 
+\hypertarget{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421ab2e967e19492ed2a71d93f4769c3a050}{E\-N\-\_\-\-O\-P}\label{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421ab2e967e19492ed2a71d93f4769c3a050}
+}]Falling edge triggered operation enable \index{R\-E\-G\-\_\-\-S\-E\-L@{R\-E\-G\-\_\-\-S\-E\-L}!P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!R\-E\-G\-\_\-\-S\-E\-L@{R\-E\-G\-\_\-\-S\-E\-L}}\item[{\em 
+\hypertarget{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421abcd6046c0333756792e36551a6f6c212}{R\-E\-G\-\_\-\-S\-E\-L}\label{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421abcd6046c0333756792e36551a6f6c212}
+}]Register select (0 = instruction, 1 = command) \index{C\-S1@{C\-S1}!P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!C\-S1@{C\-S1}}\item[{\em 
+\hypertarget{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421acee62b06a3d968ab12920646f5e74377}{C\-S1}\label{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421acee62b06a3d968ab12920646f5e74377}
+}]Chip Select 1 (left) \index{C\-S2@{C\-S2}!P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!C\-S2@{C\-S2}}\item[{\em 
+\hypertarget{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421a9218534915aad9d7c1e0c9e8f67c9091}{C\-S2}\label{PMODIO__l_8h_a1ac3b4fec3bd90656ee8fbae57fdd421a9218534915aad9d7c1e0c9e8f67c9091}
+}]Chip Select 2 (right) \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{PMODIO__l_8h_a105c3385168bb863fc96a4d774cc271c}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-clr\-Cntl\-Bit@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-clr\-Cntl\-Bit}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-clr\-Cntl\-Bit@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-clr\-Cntl\-Bit}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-clr\-Cntl\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-clr\-Cntl\-Bit (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p, }
+\item[{{\bf L\-C\-D\-\_\-\-C\-N\-T\-L\-\_\-\-B\-I\-T}}]{bit}
+\end{DoxyParamCaption}
+)}}\label{PMODIO__l_8h_a105c3385168bb863fc96a4d774cc271c}
+Clears the specified L\-C\-D control bit without modifying others
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address \\
+\hline
+{\em bit} & bit to clear\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+X\-S\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S 
+\end{DoxyReturn}
+\hypertarget{PMODIO__l_8h_aff5bfd571b343078e91b63880b580ee5}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-delay@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-delay}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-delay@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-delay}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-delay}]{\setlength{\rightskip}{0pt plus 5cm}void P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-delay (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{PMODIO__l_8h_aff5bfd571b343078e91b63880b580ee5}
+Executes a N\-O\-P loop to meet L\-C\-D timing requirements
+
+\begin{DoxyReturn}{Returns}
+N\-O\-N\-E 
+\end{DoxyReturn}
+\hypertarget{PMODIO__l_8h_a7724f40ab627fb78a2a86da01bd90a78}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-exec@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-exec}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-exec@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-exec}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-exec}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-exec (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{PMODIO__l_8h_a7724f40ab627fb78a2a86da01bd90a78}
+Instructs the L\-C\-D to act on the data/command on the data bus
+
+The L\-C\-D uses the falling edge of the E\-N pin as an indicator that the data bus has data to be consumed. The R\-S pin indicates if the data bus contains an instruction (0) to be executed, or data (1) to be written to display ram. Delay no-\/op loops are used to meet the L\-C\-D timing requirements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+X\-S\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S 
+\end{DoxyReturn}
+\hypertarget{PMODIO__l_8h_a5dc2d78d6fd27b1c033d5ceba7b40cb7}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-exec\-Cmd@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-exec\-Cmd}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-exec\-Cmd@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-exec\-Cmd}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-exec\-Cmd}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-exec\-Cmd (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p, }
+\item[{u8}]{cmd, }
+\item[{{\bf L\-C\-D\-\_\-\-C\-H\-I\-P}}]{chip}
+\end{DoxyParamCaption}
+)}}\label{PMODIO__l_8h_a5dc2d78d6fd27b1c033d5ceba7b40cb7}
+Writes a command to the specified L\-C\-D chip
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address \\
+\hline
+{\em cmd} & the command to execute \\
+\hline
+{\em chip} & the chip to execute the command for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+X\-S\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The L\-C\-D uses its 8-\/bit data bus both for data and for commands. 
+\end{DoxyNote}
+\hypertarget{PMODIO__l_8h_ae29e4bac296761d33c37b2b330fac115}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-init@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-init}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-init@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-init}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{PMODIO__l_8h_ae29e4bac296761d33c37b2b330fac115}
+Initializes the L\-C\-D
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+X\-S\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S 
+\end{DoxyReturn}
+\hypertarget{PMODIO__l_8h_a40534f016bc1a3c05b8e32e729e1b81c}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-set\-Cntl\-Bit@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-set\-Cntl\-Bit}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-set\-Cntl\-Bit@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-set\-Cntl\-Bit}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-set\-Cntl\-Bit}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-set\-Cntl\-Bit (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p, }
+\item[{{\bf L\-C\-D\-\_\-\-C\-N\-T\-L\-\_\-\-B\-I\-T}}]{bit}
+\end{DoxyParamCaption}
+)}}\label{PMODIO__l_8h_a40534f016bc1a3c05b8e32e729e1b81c}
+Sets the specified L\-C\-D control bit without modifying others
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address \\
+\hline
+{\em bit} & bit to set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+X\-S\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S 
+\end{DoxyReturn}
+\hypertarget{PMODIO__l_8h_a42f6762bd5671e74e15edfb87338d1b2}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write\-Commit@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write\-Commit}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write\-Commit@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write\-Commit}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write\-Commit}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write\-Commit (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p, }
+\item[{u8}]{data}
+\end{DoxyParamCaption}
+)}}\label{PMODIO__l_8h_a42f6762bd5671e74e15edfb87338d1b2}
+Commits data to L\-C\-D display R\-A\-M and driver L\-C\-D map
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address \\
+\hline
+{\em data} & data to write\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+X\-S\-T\-\_\-\-S\-U\-C\-E\-S\-S
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The L\-C\-D's current X position will be automatically incremented by 1 on every write. 
+\end{DoxyNote}
+\hypertarget{PMODIO__l_8h_a28e3d218d2e8998b16560464278feb8d}{\index{P\-M\-O\-D\-I\-O\-\_\-l.\-h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}!P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write\-Data\-Bits@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write\-Data\-Bits}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write\-Data\-Bits@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write\-Data\-Bits}!PMODIO_l.h@{P\-M\-O\-D\-I\-O\-\_\-l.\-h}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write\-Data\-Bits}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write\-Data\-Bits (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p, }
+\item[{u8}]{pattern}
+\end{DoxyParamCaption}
+)}}\label{PMODIO__l_8h_a28e3d218d2e8998b16560464278feb8d}
+Writes a specified pattern to the L\-C\-D data bus
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address \\
+\hline
+{\em pattern} & bit pattern to write to L\-C\-D data bus\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+X\-S\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The L\-C\-D uses its 8-\/bit data bus both for data and for commands. 
+\end{DoxyNote}

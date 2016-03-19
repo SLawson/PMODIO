@@ -1,0 +1,382 @@
+\hypertarget{PMODIO_8c}{\section{P\-M\-O\-D\-I\-O.\-c File Reference}
+\label{PMODIO_8c}\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}}
+}
+{\ttfamily \#include \char`\"{}stdbool.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}xparameters.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}xil\-\_\-types.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}xstatus.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\-M\-O\-D\-I\-O.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\-M\-O\-D\-I\-O\-\_\-l.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{PMODIO_8c_ac36754e215947ed929595ad3d7e5f70c}{R\-O\-T\-\_\-\-B\-T\-N\-\_\-\-M\-S\-K}~0x00000001
+\item 
+\#define \hyperlink{PMODIO_8c_ac17c8f00e215b187a952b920f3ca0998}{R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-S\-E\-T\-\_\-\-M\-S\-K}~0x00000002
+\item 
+\#define \hyperlink{PMODIO_8c_a5d72e47c9f0811551b293d2ca74a33b1}{R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-C\-L\-R\-\_\-\-M\-S\-K}~(\hyperlink{PMODIO_8c_ac17c8f00e215b187a952b920f3ca0998}{R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-S\-E\-T\-\_\-\-M\-S\-K} $^\wedge$ 0x\-F\-F\-F\-F\-F\-F\-F\-F)
+\item 
+\#define \hyperlink{PMODIO_8c_a0848dd52fb548145f3da803e93624c55}{S\-E\-L\-F\-\_\-\-T\-E\-S\-T\-\_\-\-R\-E\-G\-\_\-\-C\-N\-T}~3
+\item 
+\#define \hyperlink{PMODIO_8c_a7ad9fe10f1e2c7df2a35c68265054554}{S\-E\-L\-F\-\_\-\-T\-E\-S\-T\-\_\-\-P\-A\-T\-T\-E\-R\-N}~0x\-F0\-F0\-F0\-F0
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+X\-Status \hyperlink{PMODIO_8c_aa07fd5ecfe85a0f0d82d2015db375993}{P\-M\-O\-D\-I\-O\-\_\-init} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p, u32 base\-\_\-addr)
+\item 
+X\-Status \hyperlink{PMODIO_8c_a38867844f6447dd0d761a787421a3028}{P\-M\-O\-D\-I\-O\-\_\-self\-Test} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p)
+\item 
+X\-Status \hyperlink{PMODIO_8c_ad8c25629356c40d464cedeac8d92d248}{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Step} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p, int step)
+\item 
+X\-Status \hyperlink{PMODIO_8c_a321635a852973f73f80c26b4e5eb3c66}{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Max\-Count} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p, int count)
+\item 
+X\-Status \hyperlink{PMODIO_8c_af6c2792690e922c8142eb64cf9b0602d}{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Min\-Count} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p, int count)
+\item 
+X\-Status \hyperlink{PMODIO_8c_a7a92ccd0da054b0619883ca2da96e503}{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-clr} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p)
+\item 
+X\-Status \hyperlink{PMODIO_8c_a665d8cb179f3248b77558b164289ef14}{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-read} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p, int $\ast$rotary\-\_\-cnt\-\_\-p)
+\item 
+bool \hyperlink{PMODIO_8c_a996f9a8379a0ff54fa56ea3ca9c9e3c9}{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-is\-Btn\-Pressed} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p)
+\item 
+X\-Status \hyperlink{PMODIO_8c_af2711a323db40ed68531e98a6abb3b70}{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-set\-Pos} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p, u8 x, u8 y)
+\item 
+\hyperlink{structLCD__pos}{L\-C\-D\-\_\-pos} \hyperlink{PMODIO_8c_ac2c917970a1d43d4cd3b343b6cb1d8bc}{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-get\-Pos} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p)
+\item 
+X\-Status \hyperlink{PMODIO_8c_a67282e44cf4cbfc2bada3d6cbf16a9ed}{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p, u8 data, u8 mask)
+\item 
+X\-Status \hyperlink{PMODIO_8c_af0f598beb97d6cd68e0192db2af67500}{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-clr} (\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} $\ast$inst\-\_\-p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Scott Lawson 
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Scott Lawson, 2016
+\end{DoxyCopyright}
+\hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} peripheral driver A\-P\-I function implementations
+
+The \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} peripheral interfaces with the \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} hardware, which consists of a K\-S0108-\/compatible 128 pixel x 64 pixel dot-\/matrix graphical L\-C\-D and a quadrature rotary encoder.
+
+These functions allow an application to interface with the L\-C\-D and rotary encoder hardware to draw on the L\-C\-D and obtain the rotary encoder's rotation count, and configure the rotary encoder's step size per rotation, count limits, and rotation increment/decrement directions.
+
+\begin{DoxyNote}{Note}
+The L\-C\-D code is derived from the G\-L\-C\-D library from microchip.\-com. Download link\-: \href{http://www.microchip.com/forums/download.axd?file=0;275906}{\tt http\-://www.\-microchip.\-com/forums/download.\-axd?file=0;275906}
+\end{DoxyNote}
+
+\begin{DoxyPre}\end{DoxyPre}
+
+
+
+\begin{DoxyPre}Modification History:\end{DoxyPre}
+
+
+
+\begin{DoxyPre}Ver      Who     Date            Changes\end{DoxyPre}
+
+
+
+\begin{DoxyPre}1.0      SRL     16 Mar 2016     Initial release\end{DoxyPre}
+
+
+
+\begin{DoxyPre}\end{DoxyPre}
+ 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{PMODIO_8c_ac36754e215947ed929595ad3d7e5f70c}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!R\-O\-T\-\_\-\-B\-T\-N\-\_\-\-M\-S\-K@{R\-O\-T\-\_\-\-B\-T\-N\-\_\-\-M\-S\-K}}
+\index{R\-O\-T\-\_\-\-B\-T\-N\-\_\-\-M\-S\-K@{R\-O\-T\-\_\-\-B\-T\-N\-\_\-\-M\-S\-K}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{R\-O\-T\-\_\-\-B\-T\-N\-\_\-\-M\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-O\-T\-\_\-\-B\-T\-N\-\_\-\-M\-S\-K~0x00000001}}\label{PMODIO_8c_ac36754e215947ed929595ad3d7e5f70c}
+rotary encoder pushbutton status \hypertarget{PMODIO_8c_a5d72e47c9f0811551b293d2ca74a33b1}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-C\-L\-R\-\_\-\-M\-S\-K@{R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-C\-L\-R\-\_\-\-M\-S\-K}}
+\index{R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-C\-L\-R\-\_\-\-M\-S\-K@{R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-C\-L\-R\-\_\-\-M\-S\-K}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-C\-L\-R\-\_\-\-M\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-C\-L\-R\-\_\-\-M\-S\-K~({\bf R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-S\-E\-T\-\_\-\-M\-S\-K} $^\wedge$ 0x\-F\-F\-F\-F\-F\-F\-F\-F)}}\label{PMODIO_8c_a5d72e47c9f0811551b293d2ca74a33b1}
+clear count bit mask \hypertarget{PMODIO_8c_ac17c8f00e215b187a952b920f3ca0998}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-S\-E\-T\-\_\-\-M\-S\-K@{R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-S\-E\-T\-\_\-\-M\-S\-K}}
+\index{R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-S\-E\-T\-\_\-\-M\-S\-K@{R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-S\-E\-T\-\_\-\-M\-S\-K}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-S\-E\-T\-\_\-\-M\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-O\-T\-\_\-\-C\-L\-R\-\_\-\-S\-E\-T\-\_\-\-M\-S\-K~0x00000002}}\label{PMODIO_8c_ac17c8f00e215b187a952b920f3ca0998}
+set the clear count bit mask \hypertarget{PMODIO_8c_a7ad9fe10f1e2c7df2a35c68265054554}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!S\-E\-L\-F\-\_\-\-T\-E\-S\-T\-\_\-\-P\-A\-T\-T\-E\-R\-N@{S\-E\-L\-F\-\_\-\-T\-E\-S\-T\-\_\-\-P\-A\-T\-T\-E\-R\-N}}
+\index{S\-E\-L\-F\-\_\-\-T\-E\-S\-T\-\_\-\-P\-A\-T\-T\-E\-R\-N@{S\-E\-L\-F\-\_\-\-T\-E\-S\-T\-\_\-\-P\-A\-T\-T\-E\-R\-N}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{S\-E\-L\-F\-\_\-\-T\-E\-S\-T\-\_\-\-P\-A\-T\-T\-E\-R\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-E\-L\-F\-\_\-\-T\-E\-S\-T\-\_\-\-P\-A\-T\-T\-E\-R\-N~0x\-F0\-F0\-F0\-F0}}\label{PMODIO_8c_a7ad9fe10f1e2c7df2a35c68265054554}
+pattern written to registers and read back during self-\/test \hypertarget{PMODIO_8c_a0848dd52fb548145f3da803e93624c55}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!S\-E\-L\-F\-\_\-\-T\-E\-S\-T\-\_\-\-R\-E\-G\-\_\-\-C\-N\-T@{S\-E\-L\-F\-\_\-\-T\-E\-S\-T\-\_\-\-R\-E\-G\-\_\-\-C\-N\-T}}
+\index{S\-E\-L\-F\-\_\-\-T\-E\-S\-T\-\_\-\-R\-E\-G\-\_\-\-C\-N\-T@{S\-E\-L\-F\-\_\-\-T\-E\-S\-T\-\_\-\-R\-E\-G\-\_\-\-C\-N\-T}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{S\-E\-L\-F\-\_\-\-T\-E\-S\-T\-\_\-\-R\-E\-G\-\_\-\-C\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-E\-L\-F\-\_\-\-T\-E\-S\-T\-\_\-\-R\-E\-G\-\_\-\-C\-N\-T~3}}\label{PMODIO_8c_a0848dd52fb548145f3da803e93624c55}
+number of registers being tested 
+
+\subsection{Function Documentation}
+\hypertarget{PMODIO_8c_aa07fd5ecfe85a0f0d82d2015db375993}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!P\-M\-O\-D\-I\-O\-\_\-init@{P\-M\-O\-D\-I\-O\-\_\-init}}
+\index{P\-M\-O\-D\-I\-O\-\_\-init@{P\-M\-O\-D\-I\-O\-\_\-init}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p, }
+\item[{u32}]{base\-\_\-addr}
+\end{DoxyParamCaption}
+)}}\label{PMODIO_8c_aa07fd5ecfe85a0f0d82d2015db375993}
+Initializes the \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} peripheral
+
+Configures rotary encoder defaults Count step is 1 Negative counts are allowed Max count of 2$^\wedge$32
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address \\
+\hline
+{\em base\-\_\-addr} & Base address of \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyItemize}
+\item X\-S\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S if all self-\/test code passed
+\item X\-S\-T\-\_\-\-F\-A\-I\-L\-U\-R\-E if any self-\/test code failed
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+This must be the first function called for this peripheral 
+
+This function calls P\-M\-O\-D\-I\-O\-\_\-\-Self\-Test(), so it's notes apply for this function as well 
+\end{DoxyNote}
+\hypertarget{PMODIO_8c_af0f598beb97d6cd68e0192db2af67500}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-clr@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-clr}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-clr@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-clr}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-clr}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-clr (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{PMODIO_8c_af0f598beb97d6cd68e0192db2af67500}
+Clears all pixels on the L\-C\-D
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+X\-S\-T\-\_\-\-S\-U\-C\-E\-S\-S 
+\end{DoxyReturn}
+\hypertarget{PMODIO_8c_ac2c917970a1d43d4cd3b343b6cb1d8bc}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-get\-Pos@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-get\-Pos}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-get\-Pos@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-get\-Pos}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-get\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-C\-D\-\_\-pos} P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-get\-Pos (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{PMODIO_8c_ac2c917970a1d43d4cd3b343b6cb1d8bc}
+Retrieves the current L\-C\-D write position
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{structLCD__pos}{L\-C\-D\-\_\-pos} current write position of the L\-C\-D 
+\end{DoxyReturn}
+\hypertarget{PMODIO_8c_af2711a323db40ed68531e98a6abb3b70}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-set\-Pos@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-set\-Pos}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-set\-Pos@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-set\-Pos}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-set\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-set\-Pos (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p, }
+\item[{u8}]{x, }
+\item[{u8}]{y}
+\end{DoxyParamCaption}
+)}}\label{PMODIO_8c_af2711a323db40ed68531e98a6abb3b70}
+Sets the X-\/\-Y position for the next data write
+
+X coordinate valid range is 0 -\/ 127, inclusive Y coordinate valid range is 0 -\/ 63, inclusive
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address \\
+\hline
+{\em x} & x-\/coordinate \\
+\hline
+{\em y} & y-\/coordinate\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyItemize}
+\item X\-S\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S if X and Y coordinates are in the valid range (x $<$ 128 and Y $<$ 64)
+\item X\-S\-T\-\_\-\-F\-A\-I\-L\-U\-R\-E if either coordinate is out of range 
+\end{DoxyItemize}\hypertarget{PMODIO_8c_a67282e44cf4cbfc2bada3d6cbf16a9ed}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write@{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-\-L\-C\-D\-\_\-write (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p, }
+\item[{u8}]{data, }
+\item[{u8}]{mask}
+\end{DoxyParamCaption}
+)}}\label{PMODIO_8c_a67282e44cf4cbfc2bada3d6cbf16a9ed}
+Writes data to L\-C\-D at the current position
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address \\
+\hline
+{\em data} & data to write \\
+\hline
+{\em mask} & mask to select which bits are written\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+X\-S\-T\-\_\-\-S\-U\-C\-E\-S\-S
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance's current X position will be automatically incremented by 1 on every write.
+
+Since writes to the L\-C\-D must be done a full byte at a time, the mask argument is provided to prevent the caller from having to perform read-\/modify-\/write cycles when a data write overlaps with a previous write. The driver tracks all writes internally, and when writing new data, it handles the read-\/modify-\/write cyles to only write bits to the L\-C\-D that are enabled by a set bit in the mask. 
+\end{DoxyNote}
+\hypertarget{PMODIO_8c_a7a92ccd0da054b0619883ca2da96e503}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-clr@{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-clr}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-clr@{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-clr}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-clr}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-clr (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{PMODIO_8c_a7a92ccd0da054b0619883ca2da96e503}
+Resets the current count to zero
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+X\-S\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S 
+\end{DoxyReturn}
+\hypertarget{PMODIO_8c_a996f9a8379a0ff54fa56ea3ca9c9e3c9}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-is\-Btn\-Pressed@{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-is\-Btn\-Pressed}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-is\-Btn\-Pressed@{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-is\-Btn\-Pressed}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-is\-Btn\-Pressed}]{\setlength{\rightskip}{0pt plus 5cm}bool P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-is\-Btn\-Pressed (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{PMODIO_8c_a996f9a8379a0ff54fa56ea3ca9c9e3c9}
+Returns the current state of the rotary encoder pushbutton
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the button is pressed, false otherwise 
+\end{DoxyReturn}
+\hypertarget{PMODIO_8c_a665d8cb179f3248b77558b164289ef14}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-read@{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-read}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-read@{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-read}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-read}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-read (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p, }
+\item[{int $\ast$}]{rotary\-\_\-cnt\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{PMODIO_8c_a665d8cb179f3248b77558b164289ef14}
+Retrieves the current rotary encoder count
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address \\
+\hline
+{\em rotary\-\_\-cnt\-\_\-p} & pointer to the location to populate with the count\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+X\-S\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S 
+\end{DoxyReturn}
+\hypertarget{PMODIO_8c_a321635a852973f73f80c26b4e5eb3c66}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Max\-Count@{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Max\-Count}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Max\-Count@{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Max\-Count}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Max\-Count}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Max\-Count (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p, }
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)}}\label{PMODIO_8c_a321635a852973f73f80c26b4e5eb3c66}
+Sets the maximum count allowed
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address \\
+\hline
+{\em count} & the maximum allowed count\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyItemize}
+\item X\-S\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S if max count input is valid ($<$= 2$^\wedge$31 -\/ 1)
+\item X\-S\-T\-\_\-\-F\-A\-I\-L\-U\-R\-E if count value is invalid 
+\end{DoxyItemize}\hypertarget{PMODIO_8c_af6c2792690e922c8142eb64cf9b0602d}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Min\-Count@{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Min\-Count}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Min\-Count@{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Min\-Count}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Min\-Count}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Min\-Count (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p, }
+\item[{int}]{count}
+\end{DoxyParamCaption}
+)}}\label{PMODIO_8c_af6c2792690e922c8142eb64cf9b0602d}
+Sets the minimum count allowed
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address \\
+\hline
+{\em count} & the maximum allowed count\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyItemize}
+\item X\-S\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S if min count input is valid ($>$= -\/2$^\wedge$31)
+\item X\-S\-T\-\_\-\-F\-A\-I\-L\-U\-R\-E if count value is invalid 
+\end{DoxyItemize}\hypertarget{PMODIO_8c_ad8c25629356c40d464cedeac8d92d248}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Step@{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Step}}
+\index{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Step@{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Step}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Step}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-\-R\-O\-T\-\_\-set\-Step (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p, }
+\item[{int}]{step}
+\end{DoxyParamCaption}
+)}}\label{PMODIO_8c_ad8c25629356c40d464cedeac8d92d248}
+Sets the number that the rotary encoder count is incremented or decremented by per rotation
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address \\
+\hline
+{\em step} & sets number of \char`\"{}counts\char`\"{} to increment or decrement the current count by when the rotary encoder is turned one click -\/ can be negative to invert which rotation direction increments/decrements the count\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+X\-S\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S 
+\end{DoxyReturn}
+\hypertarget{PMODIO_8c_a38867844f6447dd0d761a787421a3028}{\index{P\-M\-O\-D\-I\-O.\-c@{P\-M\-O\-D\-I\-O.\-c}!P\-M\-O\-D\-I\-O\-\_\-self\-Test@{P\-M\-O\-D\-I\-O\-\_\-self\-Test}}
+\index{P\-M\-O\-D\-I\-O\-\_\-self\-Test@{P\-M\-O\-D\-I\-O\-\_\-self\-Test}!PMODIO.c@{P\-M\-O\-D\-I\-O.\-c}}
+\subsubsection[{P\-M\-O\-D\-I\-O\-\_\-self\-Test}]{\setlength{\rightskip}{0pt plus 5cm}X\-Status P\-M\-O\-D\-I\-O\-\_\-self\-Test (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-M\-O\-D\-I\-O} $\ast$}]{inst\-\_\-p}
+\end{DoxyParamCaption}
+)}}\label{PMODIO_8c_a38867844f6447dd0d761a787421a3028}
+Run a self-\/test on the driver/device
+
+If the hardware system is not built correctly, this function may never return to the caller.
+
+
+\begin{DoxyParams}{Parameters}
+{\em inst\-\_\-p} & \hyperlink{structPMODIO}{P\-M\-O\-D\-I\-O} instance address\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyItemize}
+\item X\-S\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S if all self-\/test code passed
+\item X\-S\-T\-\_\-\-F\-A\-I\-L\-U\-R\-E if any self-\/test code failed
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+Caching must be turned off for this function to work 
+
+Self test may fail if data memory and device are not on the same bus 
+\end{DoxyNote}
