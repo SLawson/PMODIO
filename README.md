@@ -21,7 +21,7 @@ This project contains a CadSoft EAGLE schematic and board layout, and bill of ma
         /PMODIO_1.0						Peripheral IP block
     /LICENSE							License description (GPL v3)
         
- ### Repository Branches
+#### Repository Branches
  
 | Branch Name 	|	Purpose 												|
 |---------------|-----------------------------------------------------------|
